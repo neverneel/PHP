@@ -32,3 +32,6 @@ echo $b;
 
 
 ?>
+
+
+<h1><?php echo $a - $b ?></h1>
