@@ -1,0 +1,22 @@
+<?php
+// Shift all zeros to the end of an array
+
+$a = [2,0,5,6,0,8,0,0,9];
+$c = [];
+
+for($i = 0; $i < count($a); $i++){
+    if($a[$i] == 0){
+        $c[] = $a[$i];
+    }
+}
+
+
+
+print_r($a);
+
+
+
+
+
+
+?>
