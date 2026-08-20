@@ -1,10 +1,11 @@
 <?php
-// Remove duplicate values from an array using a loop
+$array = [1, 2, 3, 4, 2, 5, 3];
 
-$a = [2,3,2,4,4,6,7];
-
-
-
-
-
+for ($i = 0; $i < count($array); $i++) {
+    for ($j = $i + 1; $j < count($array); $j++) {
+        if ($array[$i] == $array[$j]) {
+            echo $array[$i] . " is duplicate<br>";
+        }
+    }
+}
 ?>
