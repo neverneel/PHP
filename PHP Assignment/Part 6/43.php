@@ -8,8 +8,9 @@ $a = [
 ];
 
 $colCount = count($a);
+    $rowCount = count($a[0]);
+
 for($i = 0; $i < $colCount; $i++){
-    $rowCount = count($a[$i]);
 
     for($j = 0; $j < $rowCount; $j++){
         echo $a[$j][$i];

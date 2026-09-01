@@ -8,12 +8,16 @@ $a = [
     [6,7]
 ];
 
+$sum = 0;
+
 
 foreach($a as $ele){
     foreach($ele as $ele2){
-        echo $ele
+        $sum = $sum + $ele2;
     }
 }
+
+echo $sum;
 
 
 

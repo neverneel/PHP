@@ -1,7 +1,7 @@
 <?php
 // Find the first repeated element in an array
 
-$arr = [12,10,10,5,12,20,11];
+$arr = [10,10,12,5,12,20,11];
 
 for($i = 0; $i < count($arr);$i++){
     for($j = $i + 1 ; $j < count($arr);$j++){
