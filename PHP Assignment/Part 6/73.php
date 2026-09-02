@@ -1,7 +1,7 @@
 <?php
 // Check if an array is a palindrome
 
-$a = [1,0,0,1];
+$a = [1,1,0,1];
 $c = [];
 
 
