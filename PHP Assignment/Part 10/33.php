@@ -1,21 +1,18 @@
 <?php
 // Write a function toTitleCase($str) that capitalizes each word
 
-// function toTitleCase($str){
-//     $upper = "";
-//     for($i = 0; $i < strlen($str); $i++){
-//         $upper .= strtoupper($str[$i]);
-//     }
-//     echo $upper;
-// }
+function toTitleCase($str){
+    $str = ucwords($str) ;
+    echo $str;
+}
 
 
 
-// toTitleCase("abcd");
+toTitleCase("Hello World");
 
 
-$str = "neel";
-echo strtoupper($str);
+// $str = "neel";
+// echo strtoupper($str);
 
 
 

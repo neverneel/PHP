@@ -17,8 +17,8 @@
 
 
 function printNumbers($n) {
-    if ($n > 10) {
-        return;
+    if ($n > 0) {
+        return 0;
     }
 
     echo $n . "<br>";
