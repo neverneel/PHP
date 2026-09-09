@@ -6,9 +6,24 @@ class Find{
     public $den;
 
 
-    public function addition(){
-        $num1 = $this -> fraction1 -> num / $this -> fraction1 -> den;
-        echo $num1;
+    public function addition($fraction){
+        $result = (($this -> num * $fraction -> den) + ($fraction -> num * $this -> den)) / ($this -> den * $fraction -> den);
+        echo $result. "<br>";
+    }
+
+    public function subtraction($fraction){
+        $result = (($this -> num * $fraction -> den) - ($fraction -> num * $this -> den)) / ($this -> den * $fraction -> den);
+        echo $result. "<br>";
+    }
+
+    public function multiplication($fraction){
+        $result = (($this -> num * $fraction -> num) / ($fraction -> den * $this -> den));
+        echo $result. "<br>";
+    }
+
+    public function division($fraction){
+        $result = (($this -> num * $fraction -> den) / ($fraction -> num * $this -> den));
+        echo $result;
     }
 }
 
@@ -21,7 +36,10 @@ $fraction2 = new Find();
 $fraction2 -> num = 3; 
 $fraction2 -> den = 2; 
 
-$fraction1 -> addition();
+$fraction1 -> addition($fraction2);
+$fraction2 -> subtraction($fraction1);
+$fraction2 -> multiplication($fraction1);
+$fraction1 -> division($fraction2);
 
 
 
