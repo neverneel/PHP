@@ -5,23 +5,23 @@ function binarySearch($arr, $target){
     $start = 0;
     $end = count($arr) - 1;
 
-    for($i = $start; $i < $end; $i++){
-        $mid = count($arr) / 2;
+    for($i = $start; $i <= $end; $i++){
+        $mid = ceil($end + $start) / 2;
 
         if($mid == $target){
             echo $mid;
         }
 
         if($mid < $target){
-            $start = $mid + 1;
+            $start = $mid;
         }
 
         if($mid > $target){
-            $end = $mid - 1;
+            $end = $mid;
         }
     }
 
-    echo $mid;
+    // echo $mid;
 }
 
 binarySearch([1,2,3,4,5,6,7,8,9,10], 4);

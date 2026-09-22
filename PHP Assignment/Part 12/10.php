@@ -22,7 +22,7 @@ class Stack{
     public function peak(){
         echo "<pre>";
         peak($this -> array);
-        print_r($this -> array);
+        print_r($this -> array);;
         
     }
 }

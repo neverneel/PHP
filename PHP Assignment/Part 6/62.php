@@ -1,8 +1,9 @@
 <?php
 // Find the least frequent element in an array using a loop
 
-$a = [5,5,2,6,6,2,3,3,4,3];
-$count = count($a);
+$a = [5,5,2,6,6,2,3,3,4,3,5];
+// $count = count($a);
+$new = [];
 
 for($i = 0; $i < count($a); $i++){
     $maxCount = 0;
@@ -13,13 +14,13 @@ for($i = 0; $i < count($a); $i++){
         }
     }
 
-    if($maxCount < $count){
-        $count = $maxCount;
+    if($maxCount < 1){
+        // $count = $maxCount;
         $new = $a[$i];
     }
 }
 
-echo $new;
+print_r($new);
 
 
 

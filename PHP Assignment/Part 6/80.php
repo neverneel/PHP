@@ -37,6 +37,7 @@ $countArray = [];
 echo "<pre>";
 
 for($i=0; $i<count($baseArray); $i++){
+    
     if(isset($countArray[$baseArray[$i]])) {
         $countArray[$baseArray[$i]] ++;
     } else {
@@ -47,9 +48,10 @@ for($i=0; $i<count($baseArray); $i++){
 }
 
 arsort($countArray);
+print_r($countArray);
 
 $count = 1;
-foreach($countArray as $key=>$ca) {
+foreach($countArray as $key => $ca) {     
     if($count == 3) {
         echo "Second most repeated: ". $key;
     }
