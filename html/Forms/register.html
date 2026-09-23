@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    
+    <style>
+        * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #dbeafe, #f3e8ff);
+    color: #222;
+}
+
+/* Main heading */
+body > h1 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    font-size: 32px;
+    color: #1e293b;
+}
+
+/* Form container */
+body > div {
+    width: 700px;
+    min-height: 800px;
+    height: auto;
+    margin: 0 auto 50px auto;
+    padding: 40px 50px;
+    border: none !important;
+    border-radius: 20px !important;
+    background-color: white;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Form */
+form {
+    text-align: left;
+}
+
+/* Heading inside form */
+form h1 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 35px;
+    font-size: 28px;
+    color: #4f46e5;
+}
+
+/* Normal labels */
+form > label {
+    display: inline-block;
+    width: 170px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #374151;
+}
+
+/* Text inputs */
+form > input[type="text"],
+form > input[type="password"],
+form > input[type="number"],
+form > input[type="date"] {
+    width: 350px;
+    height: 42px;
+    padding: 10px 14px;
+    margin-left: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Input focus */
+form > input[type="text"]:focus,
+form > input[type="password"]:focus,
+form > input[type="number"]:focus,
+form > input[type="date"]:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+
+/* Placeholder */
+input::placeholder {
+    color: #9ca3af;
+}
+
+/* Date input */
+input[type="date"] {
+    color: #555;
+}
+
+/* Gender section */
+input[type="radio"] {
+    width: auto;
+    margin: 0 5px 0 10px;
+    accent-color: #4f46e5;
+}
+
+/* Country dropdown */
+select {
+    width: 350px;
+    height: 42px;
+    margin-left: 10px;
+    padding: 0 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: white;
+    outline: none;
+    cursor: pointer;
+}
+
+select:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+
+/* Terms checkbox */
+input[type="checkbox"] {
+    width: auto;
+    margin: 0 8px 0 170px;
+    accent-color: #4f46e5;
+}
+
+/* Buttons */
+button {
+    padding: 11px 28px;
+    border: none;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Register button */
+button[type="submit"] {
+    background-color: #4f46e5;
+    color: white;
+    margin-left: 170px;
+}
+
+button[type="submit"]:hover {
+    background-color: #3730a3;
+    transform: translateY(-2px);
+}
+
+/* Reset button */
+button[type="reset"] {
+    background-color: #e5e7eb;
+    color: #374151;
+    margin-left: 10px;
+}
+
+button[type="reset"]:hover {
+    background-color: #d1d5db;
+    transform: translateY(-2px);
+}
+
+/* Responsive design */
+@media (max-width: 750px) {
+
+    body > div {
+        width: 90%;
+        padding: 30px 20px;
+    }
+
+    form > label {
+        width: 100%;
+        margin-bottom: 7px;
+    }
+
+    form > input[type="text"],
+    form > input[type="password"],
+    form > input[type="number"],
+    form > input[type="date"],
+    select {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    input[type="checkbox"] {
+        margin-left: 0;
+    }
+
+    button[type="submit"] {
+        margin-left: 0;
+    }
+}
+    </style>
+</head>
+<body>
+    <h1>Create Account</h1>
+
+    <div style="border: 2px solid black; width: 700px; height: 800px; margin: auto; border-radius: 10px;">
+        <form action="">
+            <h1>Register</h1>
+            <label>First Name</label>
+            <input type="text" placeholder="Enter First Name">
+            <br><br>
+            <label>Last Name</label>
+            <input type="text" placeholder="Enter Last Name">
+            <br><br>
+            <label>Username</label>
+            <input type="text" placeholder="Enter Username">
+            <br><br>
+            <label>Password</label>
+            <input type="password" placeholder="Enter Password">
+            <br><br>
+            <label>Confirm Password</label>
+            <input type="text" placeholder="Enter Password Again">
+            <br><br>
+            <label>Phone Number</label>
+            <input type="number" placeholder="Enter Phone Number">
+            <br><br>
+            <label>Date of Birth</label>
+            <input type="date" placeholder="Enter Date of Birth">
+            <br><br>
+            <label>Gender</label>
+            <br>
+            <label for="male">Male</label>
+            <input type="radio" id = "male" name = "a" value = "Male">
+            <label for="female">Female </label>
+            <input type="radio" name = "a" id="female" value = "Female">
+            <br><br>
+            <label>country</label>
+            <select>
+             <option>select country</option>   
+            <option>INDIA</option>
+            </select>
+            <br><br>
+            <input type="checkbox">
+            <label>Terms and Conditions</label>
+            <br><br>
+            <button type="submit">Register</button>
+            <button type="reset">Reset</button>
+            
+            
+        </form>
+    </div>
+    
+</body>
+</html>
