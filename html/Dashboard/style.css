@@ -1,0 +1,57 @@
+div{
+    /* border: 2px solid black; */
+}
+
+.sidebar{
+    color: white;
+    background-color: #1E293B;
+    padding: 20px;
+    height: 650px;
+    width: 200px;
+}
+
+.contentArea{
+    margin-left: 10px;
+    /* padding: 20px; */
+    width: 100%;
+}
+
+header {
+    /* border: 2px solid black; */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.account{
+    width: 100px;
+    text-align:center;
+}
+
+.acc-btn{
+    margin-top: 21px;
+    width: 80px;
+    height: 40px;
+}
+
+.sectionArea{
+    margin-top: 50px;
+    height: 450px;
+    background-color:lightgrey;
+}
+
+section{
+    padding: 10px;
+    background-color: aliceblue;
+    display: flex;
+}
+
+.tableArea{
+    height: 100%;
+}
+
+table{
+    width: 100%;
+    padding: 0px;
+    height: 50%;
+}
